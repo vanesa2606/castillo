@@ -22,14 +22,31 @@
   </head>
   
   <body>
-    <input type="number" id = "numpersonas"/>
-     
-    <button id="miboton" class="btn btn-success">Cargar personas...</button>
-    
+    <h1> Listado de personas</h1>
+    <p>
+        <input type="number" id = "numpersonas"/>        
+        <button id="miboton" class="btn btn-success">Cargar personas...</button>
+    </p>
+
     <div id = "personas">
 
     </div>
-        
+    <div id = "plantilla" >
+        <div  class = "row usuario">
+            <div class = "col-md-3 text-center">
+                  <img src = "https://randomuser.me/api/portraits/men/73.jpg">
+            </div>
+            <div class = "col-md-9 text-left">
+                  <p><b>Julio Garcia</b></p>
+                  <p>
+                      juliogarcia@gmail.com <br>
+                      555 254 5487 <br>
+                      Valencia <br>
+                  </p>
+            </div>
+        </div>
+    </div>
+    
     <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
