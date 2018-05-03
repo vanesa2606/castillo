@@ -22,37 +22,69 @@
   </head>
   
   <body>
+
+        <!--  <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>UNO</li>
+                        <li>DOS</li>
+                        <li>TRES</li>
+                        <li>CUATRO</li>
+                        <li>CINCO</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>UNO</li>
+                        <li>DOS</li>
+                        <li>TRES</li>
+                        <li>CUATRO</li>
+                        <li>CINCO</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>UNO</li>
+                        <li>DOS</li>
+                        <li>TRES</li>
+                        <li>CUATRO</li>
+                        <li>CINCO</li>
+                    </ul>
+                </div>
+            </div>
+        -->
     <div class="row">
         <div class="col">
-            <ul>
-                <li>UNO</li>
-                <li>DOS</li>
-                <li>TRES</li>
-                <li>CUATRO</li>
-                <li>CINCO</li>
-            </ul>
+            <button class="btn btn-dark">Añadir uno</button>
         </div>
         <div class="col">
-            <ul>
-                <li>UNO</li>
-                <li>DOS</li>
-                <li>TRES</li>
-                <li>CUATRO</li>
-                <li>CINCO</li>
-            </ul>
+            <button class="btn btn-dark">Añadir n</button>
+            <input type="number" id = "numpersonas"/>
         </div>
         <div class="col">
-            <ul>
-                <li>UNO</li>
-                <li>DOS</li>
-                <li>TRES</li>
-                <li>CUATRO</li>
-                <li>CINCO</li>
-            </ul>
+            <button class="btn btn-danger">Borrar primero</button>    
         </div>
+        <div class="col">
+            <button class="btn btn-danger">Borrar ultimo</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-warning">Ocultar todos</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-warning">Mostrar todos</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-primary">Cambiar Nombre</button>
+            <input type="text"/>
+        </div>
+        <div class="col">
+            <button class="btn btn-warning">Mostrar Ocultar fotos</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-warning">Ultimo a primero</button>
+        </div>
+        
     </div>
-
-
     <h1> Listado de personas</h1>
     <p>
         <input type="number" id = "numpersonas"/>        
@@ -88,5 +120,6 @@
     <script src="app.js"></script>
     <script src="appajax.js"></script>
   </body>
+
 
 </html>
