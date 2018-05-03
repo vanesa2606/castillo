@@ -22,6 +22,37 @@
   </head>
   
   <body>
+    <div class="row">
+        <div class="col">
+            <ul>
+                <li>UNO</li>
+                <li>DOS</li>
+                <li>TRES</li>
+                <li>CUATRO</li>
+                <li>CINCO</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li>UNO</li>
+                <li>DOS</li>
+                <li>TRES</li>
+                <li>CUATRO</li>
+                <li>CINCO</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li>UNO</li>
+                <li>DOS</li>
+                <li>TRES</li>
+                <li>CUATRO</li>
+                <li>CINCO</li>
+            </ul>
+        </div>
+    </div>
+
+
     <h1> Listado de personas</h1>
     <p>
         <input type="number" id = "numpersonas"/>        

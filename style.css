@@ -19,5 +19,7 @@ h1{
        text-transform:capitalize; /*Letra capital*/
 }
 
-
+li{
+    margin-top: 20px;
+}
 
