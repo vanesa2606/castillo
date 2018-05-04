@@ -60,6 +60,9 @@
         <div class="col">
             <button class="btn btn-dark">Añadir n</button>
             <input type="number" id = "numpersonas"/>
+            <input type="radio" name="genero" value="male">Varón<br>
+            <input type="radio" name="genero" value="female">Mujer<br>
+            <input type="radio" name="genero" value="ambos">Ambos
         </div>
         <div class="col">
             <button class="btn btn-danger">Borrar primero</button>    
@@ -83,6 +86,8 @@
         <div class="col">
             <button class="btn btn-warning">Ultimo a primero</button>
         </div>
+
+
         
     </div>
     <h1> Listado de personas</h1>

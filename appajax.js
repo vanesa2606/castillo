@@ -1,8 +1,12 @@
 $( document ).ready(function() {
     $('#plantilla').hide(); //.hide() significa esconconder y lo que estamos haciendo aqui es esconder la plantila que hemos creado
-    var cargarUsuarios = function (numero) {
+    var cargarUsuarios = function (numero, genero) {
+        var valorgenero = '';
+        if(genero != 'ambos'){
+            valorgenero = '&gender=' + genero;
+        }
         $.ajax({
-            url: 'https://randomuser.me/api/?results=' + numero,
+            url: 'https://randomuser.me/api/?results=' + numero + valorgenero,
             dataType: 'json',
             success: function(datos) {
                 $('#personas')//.empty(); Es para que vacie 
@@ -23,13 +27,15 @@ $( document ).ready(function() {
 //GESTION DE CONTROLES
 
     $('.row > div:first-child > button').on('click', function () {
-        cargarUsuarios(1);
+        cargarUsuarios(1, 'ambos');
     });
 
 
     $('.row > div:nth-child(2) > button').on('click', function () {
-         var minumero = $('#numpersonas').val(); //.val() Es el valor. Que coga el valor que le estamos diciendo en el input que tenemos en el html
-        cargarUsuarios(minumero);
+        var minumero = $('#numpersonas').val(); //.val() Es el valor. Que coga el valor que le estamos diciendo en el input que tenemos en el html
+        var migenero = $('.row > .col:nth-child(2) > input:radio[name=genero]:checked').val();
+        cargarUsuarios(minumero,migenero);
+        //console.log(genero);
     });
 
     $('.row > div:nth-child(3) > button').on('click', function () {
@@ -61,10 +67,8 @@ $( document ).ready(function() {
          $('#personas ').prepend( $('#personas > div:last-child') );
         
     });
-   
-
-
-
+    
+  
 
     
    // $('li').on('click', function(){ /*Solo se pone uno en "este"*/
