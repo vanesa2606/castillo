@@ -58,11 +58,12 @@
             <button class="btn btn-dark">Añadir uno</button>
         </div>
         <div class="col">
-            <button class="btn btn-dark">Añadir n</button>
-            <input type="number" id = "numpersonas"/>
-            <input type="radio" name="genero" value="male">Varón<br>
-            <input type="radio" name="genero" value="female">Mujer<br>
-            <input type="radio" name="genero" value="ambos">Ambos
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal">
+            Más personas
+            </button>
+            
+            
         </div>
         <div class="col">
             <button class="btn btn-danger">Borrar primero</button>    
@@ -115,8 +116,10 @@
         </div>
     </div>
     
-    <!-- Optional JavaScript -->
+    <?php include_once('modal.php'); // Esto es para que coga la pagina que hemos creado con modal.php que es donde esta el modal
+    ?>
 
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>

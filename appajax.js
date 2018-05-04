@@ -31,10 +31,11 @@ $( document ).ready(function() {
     });
 
 
-    $('.row > div:nth-child(2) > button').on('click', function () {
-        var minumero = $('#numpersonas').val(); //.val() Es el valor. Que coga el valor que le estamos diciendo en el input que tenemos en el html
-        var migenero = $('.row > .col:nth-child(2) > input:radio[name=genero]:checked').val();
+    $('#miModal > .modal-dialog > .modal-content > .modal-footer button:nth-child(2)').on('click', function () {
+        var minumero = $('#numeropersonas').val(); //.val() Es el valor. Que coga el valor que le estamos diciendo en el input que tenemos en el html
+        var migenero = $('#miModal> .modal-dialog > .modal-content > .modal-body input:radio[name=genero]:checked').val();
         cargarUsuarios(minumero,migenero);
+        $('#miModal').modal('hide'); // Esto de .modal('hide') es para que la ventana que sale del modal se quite al darle añadir
         //console.log(genero);
     });
 
@@ -53,7 +54,7 @@ $( document ).ready(function() {
     $('.row > div:nth-child(6) > button').on('click', function () {
         $('#personas > div').show();
     });
-
+        //Cambiar el nombre de la persona con un boton y el input que estan en el index
     $('.row > div:nth-child(7) > button').on('click', function () {
         $('#personas  p:first-child > b').text($('.row > .col:nth-child(7) > input').val());
     });
