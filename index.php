@@ -22,6 +22,23 @@
   </head>
   
   <body>
+    <div id="factura">
+        <div class="row">
+            <div class="col">
+                <p>Coste <input type="number" name="coste"></p>
+                <p>Kilos <input type="number" name="kilos"></p>
+                <p>Volumen <input type="number" name="volumen"></p>
+                <button class="btn btn-success">Calcular</button>
+            </div>
+            <div class="col">
+                <p>Iva <input type="number" step=0.01 name="iva"></p>
+                <p>Aduana <input type="number" name="aduana"></p>
+                <p>Auditoria <input type="number" name="auditoria"></p>
+                <p></p>
+            </div>
+        </div>
+
+    </div>
 
         <!--  <div class="row">
                 <div class="col">
@@ -100,6 +117,7 @@
     <div id = "personas">
 
     </div>
+
     <div id = "plantilla" >
         <div  class = "row usuario">
             <div class = "col-md-3 text-center">

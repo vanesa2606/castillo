@@ -1,29 +1,4 @@
-body{
-    text-align: center;
-    padding-top: 20px;
-}
-h1{
-    margin: 10px;
-    color: rgb(27, 133, 27);
-}
-.row{
-    margin:80px;
-}
-
-.miestilo{
-    color:pink;
-    font-size:20px;
-    font-wight:bold;
-}
-.usuario > .col-md-9 > p:first-child{
-       text-transform:capitalize; /*Letra capital*/
-}
-
-li{
-    margin-top: 20px;
-}
-
-div > input{
-    margin-top: 10px;
+nav > div > div > a {
+    background-color: #26333c;
 }
 
